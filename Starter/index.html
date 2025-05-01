@@ -1,11 +1,11 @@
-<!DOCTYPE html> <!-- this means im using html version 5 -->
+<!DOCTYPE html>
 <html>
     <head>
-        <!-- title tag is used to display a title of a web app in tab of a browser -->
-        <title>My Web App </title>
-        <!--this below line is used for adding the logo icon in browser tab-->
-        <link rel="icon" href="./Assets/logo.png" />
-        <!--this below line is linking our external CSS file into our HTML file-->
+        <!-- title tag is used to display title of a web app in tab of browser-->
+        <title>My Web App</title>
+        <!-- This below line is used for adding the logo icon in browser tab -->
+        <link rel="icon" href="./assets/logo.png"/>
+        <!-- This below line is linking our external css file into our html file-->
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
@@ -19,8 +19,17 @@
         <h6>Hello I'm h6 of HTML5</h6>
         <span></span>
         <button class="primary-btn" id="primary-btn-id">Click Me!</button>
-        <button class="primary-btn" id="secondary-btn-id" onclick="dontClickBtn()">Don't Click Me!</button>
-        <!--this below line creates a bridge between .html & .js file, we have included app.js in our project-->
+        <button class="primary-btn" id="secondary-btn-id" onclick="dontClickButton()">Don't Click Me!</button>
+        <br/>
+        <img src="./assets/lightbulb-ON.png" height="150" width="130" id="bulb"/> 
+        <br/>
+        <!-- <img src="./assets/lightbulb-OFF.png" height="150" width="130" id="bulb-off"/> -->
+        <br/>
+        <button class="primary-btn" id="secondary-btn-id" onclick="changeImage()">Click To Change</button>
+
+        <br/>
+        <input type="password" id="inputVal"/> <button class="primary-btn" id="change-id" onclick="showPassword()">Show</button>
+        <!-- This below line is created a bridge between .html & .js file, we have included app.js in our project-->
         <script src="./app.js"></script>
     </body>
 </html>
